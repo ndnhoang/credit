@@ -1,0 +1,13 @@
+$bg-color-1 : #f4f4f4;
+$color-1 : #000;
+$font-lora : 'lora';
+$font-karla : 'karla';
+body {
+	font-family: $font-karla;
+}
+a {
+	color: $color-1;
+}
+.top-bar {
+	background: $bg-color-1;
+}
