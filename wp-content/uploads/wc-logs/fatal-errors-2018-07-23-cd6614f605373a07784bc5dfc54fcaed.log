@@ -1,0 +1,482 @@
+2018-07-23T04:11:02+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:206
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-session.php(140): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_Cart_Session->get_cart_from_session('')
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#
+
+2018-07-23T04:23:29+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:23:31+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:23:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:23:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:23:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:24:44+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:24:45+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:24:46+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:24:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:24:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:24:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:11+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:197
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:37+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:41+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:54+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:56+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:56+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:56+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:25:57+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:26:43+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:26:51+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:26:52+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:26:53+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:26:54+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:26:54+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:26:59+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:27:01+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:27:40+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T04:36:20+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function woocommerce_after_calculate_totals(), 1 passed in /var/www/html/credit/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected in /var/www/html/credit/wp-content/themes/credit/functions.php:196
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_after_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1238): do_action('woocommerce_aft...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/themes/credit/woocommerce/cart/cart-totals.php(22): WC_Cart->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.p
+
+2018-07-23T08:57:09+00:00 CRITICAL Uncaught Error: Call to undefined function efined() in /var/www/html/credit/wp-content/themes/credit/woocommerce/checkout/review-order.php:106
+Stack trace:
+#0 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include()
+#1 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2078): wc_get_template('checkout/review...', Array)
+#2 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_order_review('')
+#3 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /var/www/html/credit/wp-content/themes/credit/woocommerce/checkout/form-checkout.php(60): do_action('woocommerce_che...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#7 /var/www/html/credit/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(250): wc
+
+2018-07-23T08:57:15+00:00 CRITICAL Uncaught Error: Call to undefined function efined() in /var/www/html/credit/wp-content/themes/credit/woocommerce/checkout/review-order.php:106
+Stack trace:
+#0 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include()
+#1 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2078): wc_get_template('checkout/review...', Array)
+#2 /var/www/html/credit/wp-includes/class-wp-hook.php(286): woocommerce_order_review('')
+#3 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#4 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#5 /var/www/html/credit/wp-content/themes/credit/woocommerce/checkout/form-checkout.php(60): do_action('woocommerce_che...')
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/wc-core-functions.php(210): include('/var/www/html/c...')
+#7 /var/www/html/credit/wp-content/plugins/woocommerce/includes/shortcodes/class-wc-shortcode-checkout.php(250): wc
+
+2018-07-23T10:08:23+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on string in /var/www/html/credit/wp-content/themes/credit/functions.php:226
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): my_function_name(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(820): do_action('woocommerce_cal...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(131): WC_Cart_Totals->calculate()
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1236): WC_Cart_Totals->__construct(Object(WC_Cart))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(284): WC_Cart->calculate_tot
+
+2018-07-23T10:08:34+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on string in /var/www/html/credit/wp-content/themes/credit/functions.php:226
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): my_function_name(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(820): do_action('woocommerce_cal...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(131): WC_Cart_Totals->calculate()
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1236): WC_Cart_Totals->__construct(Object(WC_Cart))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(284): WC_Cart->calculate_tot
+
+2018-07-23T10:08:35+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on string in /var/www/html/credit/wp-content/themes/credit/functions.php:226
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): my_function_name(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(820): do_action('woocommerce_cal...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(131): WC_Cart_Totals->calculate()
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1236): WC_Cart_Totals->__construct(Object(WC_Cart))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(284): WC_Cart->calculate_tot
+
+2018-07-23T10:08:37+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on string in /var/www/html/credit/wp-content/themes/credit/functions.php:226
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): my_function_name(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(820): do_action('woocommerce_cal...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(131): WC_Cart_Totals->calculate()
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1236): WC_Cart_Totals->__construct(Object(WC_Cart))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(284): WC_Cart->calculate_tot
+
+2018-07-23T10:08:52+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on string in /var/www/html/credit/wp-content/themes/credit/functions.php:226
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): my_function_name(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(820): do_action('woocommerce_cal...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(131): WC_Cart_Totals->calculate()
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1236): WC_Cart_Totals->__construct(Object(WC_Cart))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(284): WC_Cart->calculate_tot
+
+2018-07-23T10:10:01+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on string in /var/www/html/credit/wp-content/themes/credit/functions.php:226
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): my_function_name(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(820): do_action('woocommerce_cal...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(131): WC_Cart_Totals->calculate()
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1236): WC_Cart_Totals->__construct(Object(WC_Cart))
+#7 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-sess
+
+2018-07-23T10:10:03+00:00 CRITICAL Uncaught Error: Call to a member function get_total() on string in /var/www/html/credit/wp-content/themes/credit/functions.php:226
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): my_function_name(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(820): do_action('woocommerce_cal...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(131): WC_Cart_Totals->calculate()
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1236): WC_Cart_Totals->__construct(Object(WC_Cart))
+#7 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-sess
+
+2018-07-23T10:37:25+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::set_cart_contents_total() in /var/www/html/credit/wp-content/themes/credit/functions.php:228
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): action_cart_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(820): do_action('woocommerce_cal...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(131): WC_Cart_Totals->calculate()
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1236): WC_Cart_Totals->__construct(Object(WC_Cart))
+#7 /var/www/html/credit/wp-content/plugins/woocommerce
+
+2018-07-23T10:37:26+00:00 CRITICAL Uncaught Error: Call to undefined method WooCommerce::set_cart_contents_total() in /var/www/html/credit/wp-content/themes/credit/functions.php:228
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(286): action_cart_calculate_totals(Object(WC_Cart))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(820): do_action('woocommerce_cal...', Object(WC_Cart))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(143): WC_Cart_Totals->calculate_totals()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(131): WC_Cart_Totals->calculate()
+#6 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1236): WC_Cart_Totals->__construct(Object(WC_Cart))
+#7 /var/www/html/credit/wp-content/plugins/woocommerce
+

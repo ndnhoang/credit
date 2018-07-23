@@ -1,13 +1,20 @@
-$bg-color-1 : #f4f4f4;
-$color-1 : #000;
-$font-lora : 'lora';
-$font-karla : 'karla';
-body {
-	font-family: $font-karla;
+.container {
+	width: 1000px;
+	margin: 0 auto;
 }
-a {
-	color: $color-1;
+header {
+	display: flex;
+	padding: 20px 0;
 }
-.top-bar {
-	background: $bg-color-1;
+.user-menu {
+	float: right;
+	padding: 0;
+	list-style: none;
+	li {
+		display: inline-block;
+		padding-left: 20px;
+	}
+}
+.custom-credit {
+	float: left;
 }

@@ -44,16 +44,8 @@ add_action( 'widgets_init', 'blog_widgets_init' );
 //enqueue scripts
 function blog_scripts() {		
 	wp_enqueue_style( 'blog-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'bootstrap.min.css', get_template_directory_uri().'/css/bootstrap.min.css' );
-	wp_enqueue_style( 'fontawesome.css', get_template_directory_uri().'/css/all.css' );	
-	wp_enqueue_style( 'owl.carousel.min.css', get_template_directory_uri().'/css/owl.carousel.min.css' );
 	wp_enqueue_style( 'main.css', get_template_directory_uri().'/css/main.css' );
-	wp_enqueue_style( 'responsive.css', get_template_directory_uri().'/css/responsive.css' );
 
-	wp_enqueue_script( 'bootstrap.min.js', get_template_directory_uri().'/js/bootstrap.min.js',array('jquery'), '3.8', true );
-	wp_enqueue_script( 'fontawesome.js', get_template_directory_uri().'/js/all.js',array('jquery'), '3.8', true );
-	wp_enqueue_script( 'owl.carousel.min.js', get_template_directory_uri().'/js/owl.carousel.min.js',array('jquery'), '3.8', true );
-	wp_enqueue_script( 'jquery.lazyload.min.js', get_template_directory_uri().'/js/jquery.lazyload.min.js',array('jquery'), '3.8', true );
 	wp_enqueue_script( 'main.js', get_template_directory_uri().'/js/main.js',array('jquery'), '3.8', true );
 }
 add_action( 'wp_enqueue_scripts', 'blog_scripts' );
@@ -169,16 +161,16 @@ class WC_Settings_Tab_Process {
                 'id'       => 'wc_settings_tab_custom-setting_section_title'
             ),
             'Unit' => array(
-                'name' => __( 'Unit', 'woocommerce-settings-tab-custom-setting' ),
+                'name' => __( 'Unit', 'custom_credit_unit' ),
                 'type' => 'text',
                 'desc' => __( '1$ = ? credit', 'woocommerce-settings-tab-custom-setting' ),
-                'id'   => 'wc_settings_tab_custom-setting_title'
+                'id'   => 'custom_credit_unit'
             ),
             'Credit' => array(
-                'name' => __( 'Credit', 'woocommerce-settings-tab-custom-setting' ),
+                'name' => __( 'Credit', 'custom_credit_credit' ),
                 'type' => 'text',
                 'desc' => __( '1 credit = ? $', 'woocommerce-settings-tab-custom-setting' ),
-                'id'   => 'wc_settings_tab_custom-setting_description'
+                'id'   => 'custom_credit_credit'
             ),
             'section_end' => array(
                  'type' => 'sectionend',
@@ -189,3 +181,55 @@ class WC_Settings_Tab_Process {
     }
 }
 WC_Settings_Tab_Process::init();
+// apply credit
+if (!function_exists('apply_credit')) {
+	function apply_credit() {
+		$user = wp_get_current_user();
+		$current_credit = get_user_meta($user->ID, 'credit', true);
+		if ($current_credit >= $_REQUEST['credit']) {
+			$credit = calc_credit($_REQUEST['credit']);
+			$credit_order = get_user_meta($user->ID, 'credit_order', true);
+			if ($credit_order == null) {
+				add_user_meta($user->ID, 'credit_order', $credit, true);
+			} else {
+				update_user_meta($user->ID, 'credit_order', $credit);
+			}
+
+			do_action( 'woocommerce_cart_collaterals' );
+		} else {
+			echo '0';
+		}
+		exit;
+	}
+	add_action( 'wp_ajax_nopriv_apply_credit', 'apply_credit' );
+	add_action( 'wp_ajax_apply_credit', 'apply_credit' );
+}
+
+function calc_credit($credit) {
+	$custom_credit_credit = get_option('custom_credit_credit');
+	$custom_credit_credit = floatval($custom_credit_credit);
+	$credit = intval($credit);
+	$credit = $credit * $custom_credit_credit;
+	return $credit;
+}
+
+function custom_calculated_total( $total, $cart ){
+	$user = wp_get_current_user();
+	$credit = get_user_meta($user->ID, 'credit_order', true);
+	$credit = floatval($credit);
+    return $total - $credit;
+}
+add_filter( 'woocommerce_calculated_total', 'custom_calculated_total', 10, 2 );
+
+// custom checkout
+if (!function_exists('custom_checkout')) {
+	function custom_checkout() {
+		add_filter( 'woocommerce_calculated_total', 'custom_calculated_total', 10, 2 );
+		
+	    WC()->checkout();
+	    
+		exit;
+	}
+	add_action( 'wp_ajax_nopriv_custom_checkout', 'custom_checkout' );
+	add_action( 'wp_ajax_custom_checkout', 'custom_checkout' );
+}

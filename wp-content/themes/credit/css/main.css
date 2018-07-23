@@ -1,2 +1,2 @@
-body{font-family:"karla"}a{color:#000}.top-bar{background:#f4f4f4}
+.container{width:1000px;margin:0 auto}header{display:flex;padding:20px 0}.user-menu{float:right;padding:0;list-style:none}.user-menu li{display:inline-block;padding-left:20px}.custom-credit{float:left}
 /*# sourceMappingURL=main.css.map */
