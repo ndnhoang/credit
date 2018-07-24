@@ -21,7 +21,6 @@ wc_print_notices();
 
 do_action( 'woocommerce_before_cart' );
 $user = wp_get_current_user();
-update_user_meta($user->ID, 'credit_order', 0);
 ?>
 
 <form class="woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
@@ -144,7 +143,19 @@ update_user_meta($user->ID, 'credit_order', 0);
 					<?php } ?>
 
 						<div class="custom-credit">
-							<label for="credit_number"><?php esc_html_e( 'Credit:', 'woocommerce' ); ?></label> <input type="number" name="credit_number" class="input-text" id="credit_number" value="" placeholder="<?php esc_attr_e( 'Credit number', 'woocommerce' ); ?>" /> <button type="submit" class="button" name="apply_credit" value="<?php esc_attr_e( 'Apply credit', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply credit', 'woocommerce' ); ?></button>
+							<?php $custom_credit_credit = get_option('custom_credit_credit');
+							$custom_credit_credit = floatval($custom_credit_credit);
+							$subtotal = WC()->cart->subtotal;
+							$credit_number_max = round($subtotal / $custom_credit_credit);
+							if (isset($_SESSION['credit_number'])) {
+								$current_credit = intval($_SESSION['credit_number']);
+								if ($current_credit > $credit_number_max) {
+									$current_credit = $credit_number_max;
+									$_SESSION['credit_number'] = $current_credit;
+								}
+							}
+							?>
+							<label for="credit_number"><?php esc_html_e( 'Credit:', 'woocommerce' ); ?></label> <input type="number" name="credit_number" class="input-text" id="credit_number" value="<?php echo (isset($_SESSION['credit_number'])) ? $_SESSION['credit_number'] : ''; ?>" min="0" max="<?php echo $credit_number_max; ?>" placeholder="<?php esc_attr_e( 'Credit number', 'woocommerce' ); ?>" /> <button type="submit" class="button" name="apply_credit" value="<?php esc_attr_e( 'Apply credit', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply credit', 'woocommerce' ); ?></button>
 								<?php do_action( 'woocommerce_cart_coupon' ); ?>
 						</div>
 

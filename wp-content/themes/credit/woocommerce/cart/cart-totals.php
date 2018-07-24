@@ -58,7 +58,7 @@ WC()->cart->calculate_totals();
 
 		<?php endif; ?>
 
-		<?php foreach ( WC()->cart->get_fees() as $fee ) : ?>
+		<?php foreach ( WC()->cart->get_fees() as $fee ) :  ?>
 			<tr class="fee">
 				<th><?php echo esc_html( $fee->name ); ?></th>
 				<td data-title="<?php echo esc_attr( $fee->name ); ?>"><?php wc_cart_totals_fee_html( $fee ); ?></td>
@@ -88,19 +88,6 @@ WC()->cart->calculate_totals();
 
 		<?php do_action( 'woocommerce_cart_totals_before_order_total' ); ?>
 
-		<!-- custom credit -->
-		<?php $user = wp_get_current_user();
-		$credit_order = get_user_meta($user->ID, 'credit_order', true);
-		if ($credit_order) : 
-			$credit_order = floatval($credit_order);
-			$credit_order = wc_price($credit_order); 
-			?>
-			<tr class="credit-total">
-				<th><?php _e( 'Credit(s)', 'woocommerce' ); ?></th>
-				<td data-title="<?php esc_attr_e( 'Credit', 'woocommerce' ); ?>"><?php echo $credit_order; ?></td>
-			</tr>
-		<?php endif; ?>
-		<!-- #cutom credit -->
 
 		<tr class="order-total">
 			<th><?php _e( 'Total', 'woocommerce' ); ?></th>

@@ -1,0 +1,126 @@
+2018-07-24T02:23:43+00:00 CRITICAL Cannot redeclare custom_calculated_total() (previously declared in /var/www/html/credit/wp-content/themes/credit/functions.php:216)
+
+2018-07-24T02:23:44+00:00 CRITICAL Cannot redeclare custom_calculated_total() (previously declared in /var/www/html/credit/wp-content/themes/credit/functions.php:216)
+
+2018-07-24T02:23:58+00:00 CRITICAL Cannot redeclare custom_calculated_total() (previously declared in /var/www/html/credit/wp-content/themes/credit/functions.php:216)
+
+2018-07-24T07:26:33+00:00 CRITICAL Uncaught Error: Cannot access protected property WC_Order_Item_Fee::$id in /var/www/html/credit/wp-content/themes/credit/functions.php:275
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(288): custom_order_cancelled(83)
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(346): do_action('woocommerce_ord...', 83, Object(WC_Order))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(230): WC_Order->status_transition()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-order-data.php(620): WC_Order->save()
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_Meta_Box_Order_Data::save(83, Object(WP_Post))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /v
+
+2018-07-24T07:26:39+00:00 CRITICAL Uncaught Error: Cannot access protected property WC_Order_Item_Fee::$id in /var/www/html/credit/wp-content/themes/credit/functions.php:275
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(288): custom_order_cancelled(83)
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(346): do_action('woocommerce_ord...', 83, Object(WC_Order))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(230): WC_Order->status_transition()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-order-data.php(620): WC_Order->save()
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_Meta_Box_Order_Data::save(83, Object(WP_Post))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /v
+
+2018-07-24T07:27:05+00:00 CRITICAL Uncaught Error: Cannot access protected property WC_Order_Item_Fee::$id in /var/www/html/credit/wp-content/themes/credit/functions.php:275
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(288): custom_order_cancelled(82)
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(346): do_action('woocommerce_ord...', 82, Object(WC_Order))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(230): WC_Order->status_transition()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-order-data.php(620): WC_Order->save()
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_Meta_Box_Order_Data::save(82, Object(WP_Post))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /var
+
+2018-07-24T07:27:43+00:00 CRITICAL Uncaught Error: Cannot access protected property WC_Order_Item_Fee::$id in /var/www/html/credit/wp-content/themes/credit/functions.php:275
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(288): custom_order_cancelled(82)
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(346): do_action('woocommerce_ord...', 82, Object(WC_Order))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(230): WC_Order->status_transition()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-order-data.php(620): WC_Order->save()
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_Meta_Box_Order_Data::save(82, Object(WP_Post))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /var
+
+2018-07-24T07:33:10+00:00 CRITICAL Uncaught Error: Cannot access protected property WC_Order_Item_Fee::$id in /var/www/html/credit/wp-content/themes/credit/functions.php:275
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(288): custom_order_cancelled(81)
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(346): do_action('woocommerce_ord...', 81, Object(WC_Order))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(230): WC_Order->status_transition()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-order-data.php(620): WC_Order->save()
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_Meta_Box_Order_Data::save(81, Object(WP_Post))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /v
+
+2018-07-24T07:34:13+00:00 CRITICAL Uncaught Error: Cannot access protected property WC_Order_Item_Fee::$id in /var/www/html/credit/wp-content/themes/credit/functions.php:275
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(288): custom_order_cancelled(81)
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(346): do_action('woocommerce_ord...', 81, Object(WC_Order))
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-order.php(230): WC_Order->status_transition()
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/admin/meta-boxes/class-wc-meta-box-order-data.php(620): WC_Order->save()
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_Meta_Box_Order_Data::save(81, Object(WP_Post))
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#8 /v
+
+2018-07-24T09:37:41+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/credit/wp-content/themes/credit/functions.php:248
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(288): custom_after_checkout(Object(WC_Order))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(350): do_action('woocommerce_che...', Object(WC_Order), Array)
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1030): WC_Checkout->create_order(Array)
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(435): WC_Checkout->process_checkout()
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_AJAX::checkout('')
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#8 /var/www/html/credit/wp-includes/plugin.ph
+
+2018-07-24T09:37:47+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/credit/wp-content/themes/credit/functions.php:248
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(288): custom_after_checkout(Object(WC_Order))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(350): do_action('woocommerce_che...', Object(WC_Order), Array)
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1030): WC_Checkout->create_order(Array)
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(435): WC_Checkout->process_checkout()
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_AJAX::checkout('')
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#8 /var/www/html/credit/wp-includes/plugin.ph
+
+2018-07-24T09:38:03+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/credit/wp-content/themes/credit/functions.php:248
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(288): custom_after_checkout(Object(WC_Order))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(350): do_action('woocommerce_che...', Object(WC_Order), Array)
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1030): WC_Checkout->create_order(Array)
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(435): WC_Checkout->process_checkout()
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_AJAX::checkout('')
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#8 /var/www/html/credit/wp-includes/plugin.ph
+
+2018-07-24T09:41:01+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /var/www/html/credit/wp-content/themes/credit/functions.php:248
+Stack trace:
+#0 /var/www/html/credit/wp-includes/class-wp-hook.php(288): custom_after_checkout(Object(WC_Order))
+#1 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /var/www/html/credit/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(350): do_action('woocommerce_che...', Object(WC_Order), Array)
+#4 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-checkout.php(1030): WC_Checkout->create_order(Array)
+#5 /var/www/html/credit/wp-content/plugins/woocommerce/includes/class-wc-ajax.php(435): WC_Checkout->process_checkout()
+#6 /var/www/html/credit/wp-includes/class-wp-hook.php(286): WC_AJAX::checkout('')
+#7 /var/www/html/credit/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#8 /var/www/html/credit/wp-includes/plugin.ph
+

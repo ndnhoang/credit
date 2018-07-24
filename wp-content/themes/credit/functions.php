@@ -105,7 +105,7 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 // add credit field in user profile
 if (!function_exists('extra_user_profile_fields')) {
 	function extra_user_profile_fields($user) { ?>
-		<h2><?php _e("Extra profile information", "credit"); ?></h2>
+		<h2><?php _e("User Credit", "credit"); ?></h2>
 		<table class="form-table">
 		    <tr>
 		        <th><label for="credit"><?php _e("Credit"); ?></label></th>
@@ -188,13 +188,14 @@ if (!function_exists('apply_credit')) {
 		$current_credit = get_user_meta($user->ID, 'credit', true);
 		if ($current_credit >= $_REQUEST['credit']) {
 			$credit = calc_credit($_REQUEST['credit']);
-			$credit_order = get_user_meta($user->ID, 'credit_order', true);
-			if ($credit_order == null) {
-				add_user_meta($user->ID, 'credit_order', $credit, true);
-			} else {
-				update_user_meta($user->ID, 'credit_order', $credit);
-			}
-
+			// $credit_order = get_user_meta($user->ID, 'credit_order', true);
+			// if ($credit_order == null) {
+			// 	add_user_meta($user->ID, 'credit_order', $credit, true);
+			// } else {
+			// 	update_user_meta($user->ID, 'credit_order', $credit);
+			// }
+			$_SESSION['credit'] = $credit;
+			$_SESSION['credit_number'] = $_REQUEST['credit'];
 			do_action( 'woocommerce_cart_collaterals' );
 		} else {
 			echo '0';
@@ -205,31 +206,102 @@ if (!function_exists('apply_credit')) {
 	add_action( 'wp_ajax_apply_credit', 'apply_credit' );
 }
 
-function calc_credit($credit) {
-	$custom_credit_credit = get_option('custom_credit_credit');
-	$custom_credit_credit = floatval($custom_credit_credit);
-	$credit = intval($credit);
-	$credit = $credit * $custom_credit_credit;
-	return $credit;
-}
-
-function custom_calculated_total( $total, $cart ){
-	$user = wp_get_current_user();
-	$credit = get_user_meta($user->ID, 'credit_order', true);
-	$credit = floatval($credit);
-    return $total - $credit;
-}
-add_filter( 'woocommerce_calculated_total', 'custom_calculated_total', 10, 2 );
-
-// custom checkout
-if (!function_exists('custom_checkout')) {
-	function custom_checkout() {
-		add_filter( 'woocommerce_calculated_total', 'custom_calculated_total', 10, 2 );
-		
-	    WC()->checkout();
-	    
-		exit;
+if (!function_exists('calc_credit')) {
+	function calc_credit($credit) {
+		$custom_credit_credit = get_option('custom_credit_credit');
+		$custom_credit_credit = floatval($custom_credit_credit);
+		$credit = intval($credit);
+		$credit = $credit * $custom_credit_credit;
+		return $credit;
 	}
-	add_action( 'wp_ajax_nopriv_custom_checkout', 'custom_checkout' );
-	add_action( 'wp_ajax_custom_checkout', 'custom_checkout' );
+}
+
+if (!function_exists('custom_discount')) {
+	function custom_discount( $cart_obj ) {
+	    // $user = wp_get_current_user();
+		// $credit = get_user_meta($user->ID, 'credit_order', true);
+		session_start();
+		$credit = $_SESSION['credit'];
+		if (!$credit)
+			$credit = 0;
+		else
+			$credit = floatval($credit) * -1;
+
+	    // Alter the cart discount total
+	    $cart_obj->add_fee( __( 'Credit(s)' ), $credit);
+	}
+}
+add_action('woocommerce_cart_calculate_fees', 'custom_discount');
+
+add_action( 'woocommerce_checkout_order_processed', 'custom_after_checkout', 10, 1 ); 
+if (!function_exists('custom_after_checkout')) {
+	function custom_after_checkout($order_id) {
+		session_start();
+		$credit = intval($_SESSION['credit_number']);
+		unset($_SESSION['credit']);
+		unset($_SESSION['credit_number']);
+		$user = wp_get_current_user();
+		$current_credit = intval(get_user_meta($user->ID, 'credit', true));
+		$current_credit -= $credit;
+		update_user_meta($user->ID, 'credit', $current_credit);
+		global $wpdb;
+		$note = 'Used '.number_format($credit, 0, ',', '.').' credit(s) for this order (order processing)';
+		$date = date('Y-m-d H:i:s');
+		$wpdb->insert('custom_credit', array('order_id' => $order_id, 'user_id' => $user->ID, 'type' => 1, 'note' => $note, 'date' => $date), array('%d', '%d', '%d', '%s', '%s'));
+	}
+}
+
+add_action( 'woocommerce_order_status_completed', 'custom_order_completed');
+if (!function_exists('custom_order_completed')) {
+	function custom_order_completed($order_id) {
+		$order = wc_get_order($order_id);
+		$subtotal = $order->get_subtotal();
+		$subtotal = round($subtotal);
+		$user = wp_get_current_user();
+		$credit = get_user_meta($user->ID, 'credit', true);
+		$custom_credit_unit = get_option('custom_credit_unit');
+		$custom_credit_unit = floatval($custom_credit_unit);
+		$subtotal = $subtotal * $custom_credit_unit;
+		if ($credit == null) {
+			add_user_meta($user->ID, 'credit', $subtotal, true);
+		} else {
+			$credit += $subtotal;
+			update_user_meta($user->ID, 'credit', $credit);
+		}
+		global $wpdb;
+		$note = 'Awarded '.number_format($subtotal, 0, ',', '.').' credit(s) for this order (order completed)';
+		$date = date('Y-m-d H:i:s');
+		$wpdb->insert('custom_credit', array('order_id' => $order_id, 'user_id' => $user->ID, 'status' => 1, 'type' => 2, 'note' => $note, 'date' => $date), array('%d', '%d', '%d', '%d', '%s', '%s'));
+	}
+}
+add_action( 'woocommerce_order_status_cancelled', 'custom_order_cancelled');
+add_action( 'woocommerce_order_status_failed', 'custom_order_cancelled');
+if (!function_exists('custom_order_cancelled')) {
+	function custom_order_cancelled($order_id) {
+		$order = wc_get_order($order_id);
+		foreach ($order->get_fees() as $fee) {
+			var_dump($fee);
+			if ($fee['name'] == 'Credit(s)') {
+				global $wpdb;
+				$data = $wpdb->get_row("SELECT * FROM custom_credit WHERE order_id = ".$order_id." AND status = 1 AND type = 1");
+				if (!$data) {
+					$fee_total = floatval($fee['total']) * -1;
+					$user = wp_get_current_user();
+					$credit = get_user_meta($user->ID, 'credit', true);
+					$custom_credit_credit = get_option('custom_credit_credit');
+					$custom_credit_credit = floatval($custom_credit_credit);
+					$fee_total = round($fee_total / $custom_credit_credit);
+					if ($credit == null) {
+						add_user_meta($user->ID, 'credit', $fee_total, true);
+					} else {
+						$credit += $fee_total;
+						update_user_meta($user->ID, 'credit', $credit);
+					}
+					$note = number_format($fee_total, 0, ',', '.').' credit(s) refundable due to order cancellation';
+					$date = date('Y-m-d H:i:s');
+					$wpdb->insert('custom_credit', array('order_id' => $order_id, 'user_id' => $user->ID, 'status' => 1, 'type' => 1, 'note' => $note, 'date' => $date), array('%d', '%d', '%d', '%d', '%s', '%s'));
+				}
+			}
+		}
+	}
 }

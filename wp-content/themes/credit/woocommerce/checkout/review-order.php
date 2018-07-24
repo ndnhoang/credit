@@ -102,21 +102,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
-		<!-- custom credit -->
-		<?php if(defined( 'DOING_AJAX' )): 
-			$user = wp_get_current_user();
-			$credit_order = get_user_meta($user->ID, 'credit_order', true);
-			if ($credit_order) :
-				$credit = wc_price($credit_order); 
-				?>
-				<tr class="credit-total">
-					<th><?php _e( 'Credit(s)', 'woocommerce' ); ?></th>
-					<td><?php echo $credit; ?></td>
-				</tr>
-			<?php endif; update_user_meta($user->ID, 'credit_order', 0);
-		endif; ?>
-		<!-- #custom credit -->
-
 		<tr class="order-total">
 			<th><?php _e( 'Total', 'woocommerce' ); ?></th>
 			<td><?php wc_cart_totals_order_total_html(); ?></td>
